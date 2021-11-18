@@ -10,10 +10,10 @@ if ENV['chrome']
   Capybara.default_driver = :selenium_chrome
   Capybara.register_driver :selenium_chrome do |app|
     options = Selenium::WebDriver::Chrome::Options.new(args:
-    [])
+    ['--icognoto'])
     Capybara::Selenium::Driver.new(app,
                                    browser: :chrome,
-                                   options: options)
+                                   capabilities: options)
   end
 elsif ENV['chrome_headless']
   Capybara.default_driver = :selenium_chrome
@@ -21,7 +21,7 @@ elsif ENV['chrome_headless']
     options = Selenium::WebDriver::Chrome::Options.new(args:
       %w[headless disable-gpu incognito no-sandbox])
     Capybara::Selenium::Driver.new(app, browser: :chrome,
-                                        options: options)
+                                        capabilities: options)
   end
 elsif ENV['firefox']
   Capybara.default_driver = :firefox
