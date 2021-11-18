@@ -53,11 +53,17 @@ bundle install
 Para rodar o projeto basta seguir os comandos abaixo:
 
 ```bash
-#
+# Executando os testes
+cucumber
 
-# 
-Navegador aberto: cucumber chrome=true screenshot=true
-Rodando em headless: cucumber chrome_headless=true screenshot=true
+# Executante os testes com report
+cucumber screenshot=true
+
+# Rodando em headless 
+cucumber chrome_headless=true screenshot=true
 ```
+Obs: 
+1. Alguns testes podem quebrar devido a proteção contra bots caso utilize o ENV=true.
+2. Algumas configurações no hooks e env foram comentadas ou removidas para a execução no ambiente com proteção de bots.
 
 Relatório gerado em data/report (report.html)

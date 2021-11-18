@@ -14,7 +14,7 @@ After do |scn|
   if ENV['screenshot']
    image = page.save_screenshot('data/screenshot/screenshot.png')
    screenshot = Base64.encode64(File.open(image).read)
-   attach(screenshot, 'image/png')
+   embed(screenshot, 'image/png;base64')
   end
 
   Capybara.current_session.driver.quit
