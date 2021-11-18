@@ -1,0 +1,22 @@
+AllCops:
+  Exclude:
+    - features/support/hooks.rb
+    - features/support/env.rb
+    - features/support/report.rb
+    - features/step_definitions/*.rb
+    - features/support/module/*.rb
+
+Metrics/LineLength:
+  Max: 200
+
+MethodLength:
+  Max: 60
+
+Metrics/AbcSize:
+  Enabled: false
+
+BlockLength:
+  Max: 100
+
+Metrics/ClassLength:
+  Max: 120

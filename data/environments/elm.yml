@@ -1,0 +1,24 @@
+# Homepage elements
+search:                         "//input[@id='searchBar']"
+autocomplete:                   "//div[@class='SearchBar__results__result__name']"
+
+# Result elements
+result_first_product:           "//div[@class='sc-hMFtBS cVTeoI']"
+result_first_product_price:     "//div[@class='sc-hMFtBS cVTeoI']//strong[@class='sc-kvZOFW knsOia']"
+
+# Product elements
+contact_full_name_field:        "//div[@id='SendProposal']//input[@name='fullName']"
+contact_full_email_field:       "//div[@id='SendProposal']//input[@name='email']"
+contact_full_phone_field:       "//div[@id='SendProposal']//input[@name='numberPhone']"
+contact_full_message_field:     "//div[@id='SendProposal']//textarea[@name='message']"
+instalment_full_name_field:     "//div[@id='SimulationFinanceSantander']//input[@name='fullName']"
+instalment_full_email_field:    "//div[@id='SimulationFinanceSantander']//input[@name='email']"
+instalment_full_phone_field:    "//div[@id='SimulationFinanceSantander']//input[@name='numberPhone']"
+instalment_full_birthday_field: "//div[@id='SimulationFinanceSantander']//input[@name='birthday']"
+instalment_full_cpf_field:      "//div[@id='SimulationFinanceSantander']//input[@name='cpf']"
+instalment_full_uf_field:       "//div[@id='SimulationFinanceSantander']//select[@class='Form__field__uf']"
+product_first_product_price:    "//div[@id='SendProposal']//strong[@id='vehicleSendProposalPrice']"
+enviar_mensagem:                "//button[text()='Enviar mensagem']"
+ver_parcelas:                   "//div[@id='SimulationFinanceSantander']//button[text()='Ver Parcelas']"
+modal_close:                    "//div[@class='modal--close']"
+modal:                          "//div[@class='explanation-financing undefined ']"
